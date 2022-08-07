@@ -1,0 +1,40 @@
+$primary-color:black;
+$accent-color:#fc5826;
+$text-color:#D5fF55;
+$font-weights:("regular":500,
+    "medium":600,
+    "bold":700);
+$mobile-width:600;
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+    @if(lightness($color) > 40%) {
+        @return #000;
+    }
+
+    @else {
+        @return #fff;
+    }
+}
+
+@mixin media-md{
+    @media screen and (min-width:768px) {
+        @content;
+        
+    }
+}
+@mixin media-lg{
+    @media screen and (min-width:1024px) {
+        @content;
+        
+    }
+}
+@mixin media-xl{
+    @media screen and (min-width:1600px) {
+        @content;
+        
+    }
+}

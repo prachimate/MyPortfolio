@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fc5826;
+  color: #D5fF55;
+  font-weight: 500;
+}
+
+#Maindiv1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+@media (max-width: 600) {
+  #Maindiv1 {
+    flex-direction: column;
+  }
+}
+
+#div1, #div1 #div12 {
+  background-color: brown;
+}
+#div1 #div11 {
+  font-size: 12px;
+  color: blueviolet;
+}
+#div1 p:hover, #div1 #div12 p:hover {
+  color: pink;
+}
+#div1 #div12 p:hover {
+  color: red;
+}
+
+.light {
+  background: white;
+  color: black;
+}/*# sourceMappingURL=main.css.map */
